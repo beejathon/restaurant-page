@@ -55,6 +55,10 @@ function addEvents() {
     contact.addEventListener('click', loadContact);
 };
 
-loadPage();
-loadHome();
-addEvents();
+function init() {
+    loadPage();
+    loadHome();
+    addEvents();
+}
+
+init();
