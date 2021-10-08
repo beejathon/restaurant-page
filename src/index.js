@@ -1,5 +1,4 @@
 import './style.css';
-import Background from './background.jpg';
 import loadHome from './home.js';
 import loadMenu from './menu.js';
 import loadContact from './contact.js';
@@ -36,12 +35,8 @@ function loadPage() {
     main.classList.add('main');
     main.setAttribute('id', 'main')
 
-    const image = new Image();
-    image.src = Background;
-
     content.appendChild(createNav());
-    content.appendChild(main)
-    content.appendChild(image);
+    content.appendChild(main);
 }
 
 function addEvents() {
