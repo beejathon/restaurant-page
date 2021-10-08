@@ -10,9 +10,11 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: 20px;
+    max-width: fit-content;
 }
 
 nav {
+    max-width: 60%;
     padding: 40px;
 }
 
@@ -25,6 +27,7 @@ nav {
     padding: 40px;
     font-family:'Courier New', Courier, monospace;
     font-size: 22px;
+    max-width: fit-content;
 }
 
 .main {
@@ -38,21 +41,24 @@ nav {
 }
 
 .menu {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    justify-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 img {
     border: 1px solid #ddd;
     border-radius: 4px;
     padding: 5px;
-    width: 400px;
+    margin: 10px;
+    width: 300px;
+    max-width: fit-content;
 }
 
 .loc {
     border: 1px solid #ddd;
     border-radius: 4px;
     padding: 5px;
-    width: 50%;
+    width: 600px;
+    max-width: 80%;
 }
