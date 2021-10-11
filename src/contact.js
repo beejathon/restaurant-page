@@ -5,7 +5,7 @@ function loadContact() {
     content.textContent = '';
 
     const description = document.createElement('p');
-    description.textContent = 'We are located in Long Bien near Long Bien Bridge, overlooking the Red River. Slide thru muffucker.'
+    description.textContent = 'We are located in Long Bien District, just near the Long Bien Bridge and overlooking the Red River. Slide thru muffucker.'
 
     const loc = new Image();
     loc.src = location;

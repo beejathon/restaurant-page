@@ -35,36 +35,109 @@ function createMenu() {
     const goi_img = new Image();
     goi_img.src = goi;
 
+    const pizza_desc = document.createElement('div');
+    pizza_desc.classList.add('desc');
+    pizza_desc.innerHTML = `
+        <h3>Margherita Pizza</h3>
+        <p>Tomato based sauce on cornmeal dough topped with mozzarella cashew cream cheese, tomatoes and basil. 
+        Basil freshly picked from our garden and all other ingredients locally sourced.</p> 
+    `
+    const patatas_desc = document.createElement('div');
+    patatas_desc.classList.add('desc');
+    patatas_desc.innerHTML = `
+        <h3>Patatas Bravas</h3>
+        <p>Crispy fried potatoes in a creamy garlic aioli sauce topped with paprika and fresh parsley.</p> 
+    `
+    const sope_desc = document.createElement('div');
+    sope_desc.classList.add('desc');
+    sope_desc.innerHTML = `
+        <h3>Walnut and Bean Sopes</h3>
+        <p>Two thick masa harina tortillas fried and topped with walnuts, refried mayocoba beans, lettuce, tomatillo avocado salsa, queso freso and cashew cheese.</p>
+    `
+    const flautas_desc = document.createElement('div');
+    flautas_desc.classList.add('desc');
+    flautas_desc.innerHTML = `
+        <h3>Black Bean and Potato Flautas</h3>
+        <p>Black beans, potatoes and corn wrapped in a flour tortilla and baked until crispy. Topped with tomatillo avocado salsa, queso freso and cashew cheese.</p>
+    `
+    const ginataang_desc = document.createElement('div');
+    ginataang_desc.classList.add('desc');
+    ginataang_desc.innerHTML = `
+        <h3>Ginataang Kalabasa</h3>
+        <p>Kalabasa squash, eggplant and string beans braised in a creamy coconut curry sauce.</p>
+    `
+    const laing_desc = document.createElement('div');
+    laing_desc.classList.add('desc');
+    laing_desc.innerHTML = `
+        <h3>Laing</h3>
+        <p>Dried taro leaves slow cooked in coconut milk, aromatics, and spices.</p>
+    `
+    const sesame_desc = document.createElement('div');
+    sesame_desc.classList.add('desc');
+    sesame_desc.innerHTML = `
+        <h3>Chilled Sesame Noodles</h3>
+        <p>Flour noodles in a creamy sesame and chili oil sauce and topped with green onions.</p>
+    `
+    const dumplings_desc = document.createElement('div');
+    dumplings_desc.classList.add('desc');
+    dumplings_desc.innerHTML = `
+        <h3>Vegan Xiao Long Bao</h3>
+        <p>Flour dumplings with a tofu and mushroom filling and soy based broth.</p>
+    `
+    const mien_desc = document.createElement('div');
+    mien_desc.classList.add('desc');
+    mien_desc.innerHTML = `
+        <h3>Mien Tron</h3>
+        <p>Glass noodles mixed with tofu, peanuts and lime in a light vegan fish sauce.</p>
+    `
+    const goi_desc = document.createElement('div');
+    goi_desc.classList.add('desc');
+    goi_desc.innerHTML = `
+        <h3>Goi Nam</h3>
+        <p>Oyster mushroom, carrot, peanut and basil salad topped with a light vegan fish sauce dressing.</p>
+    `
+
+
     const item0 = document.createElement('div');
     item0.classList.add('menu-item');
     item0.appendChild(pizza_img);
+    item0.appendChild(pizza_desc);
     const item1 = document.createElement('div');
     item1.classList.add('menu-item');
     item1.appendChild(patatas_img);
+    item1.appendChild(patatas_desc);
     const item2 = document.createElement('div');
     item2.classList.add('menu-item');
     item2.appendChild(sope_img);
+    item2.appendChild(sope_desc);
     const item3 = document.createElement('div');
     item3.classList.add('menu-item');
     item3.appendChild(flautas_img);
+    item3.appendChild(flautas_desc);
     const item4 = document.createElement('div');
     item4.classList.add('menu-item');
     item4.appendChild(ginataang_img);
+    item4.appendChild(ginataang_desc);
     const item5 = document.createElement('div');
     item5.classList.add('menu-item');
     item5.appendChild(laing_img);
+    item5.appendChild(laing_desc);
     const item6 = document.createElement('div');
     item6.classList.add('menu-item');
     item6.appendChild(sesame_img);
+    item6.appendChild(sesame_desc);
     const item7 = document.createElement('div');
     item7.classList.add('menu-item');
     item7.appendChild(dumplings_img);
+    item7.appendChild(dumplings_desc);
     const item8 = document.createElement('div');
     item8.classList.add('menu-item');
     item8.appendChild(mien_img);
+    item8.appendChild(mien_desc);
     const item9 = document.createElement('div');
     item9.classList.add('menu-item');
     item9.appendChild(goi_img);
+    item9.appendChild(goi_desc);
 
     menu.appendChild(item0);
     menu.appendChild(item1);

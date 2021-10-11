@@ -14,30 +14,37 @@ body {
 }
 
 nav {
-    max-width: 60%;
-    padding: 40px;
+    display: flex;
+    flex: row;
+    justify-content: center;
+    column-gap: 5rem;
+    border: 2px solid black;
+    width: 100vw;
+    padding: 20px;
+    margin: 10px;
+    background-color: rgba(0, 0, 0, 0.9);
 }
 
 .btn {
     cursor: pointer;
     border-style: none;
     outline: none;
+    background-color: rgba(0, 0, 0, 0);
     color: #eee;
-    background-color: rgba(0, 0, 0, 0.9);
-    padding: 40px;
+    padding: 10px;
     font-family:'Courier New', Courier, monospace;
-    font-size: 22px;
-    max-width: fit-content;
+    font-size: 20px;
 }
 
 .main {
-    max-width: 80%;
+    width: 80vw;
     border: 2px solid black;
     padding: 20px;
     background-color: rgba(0, 0, 0, 0.8);
-    width: 80%;
     font-family:'Courier New', Courier, monospace;
     color: #eee;
+    display: flex;
+    flex-direction: column;
 }
 
 .menu {
@@ -46,13 +53,24 @@ nav {
     justify-content: space-between;
 }
 
+.menu-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.desc {
+    vertical-align: middle;
+}
+
 img {
     border: 1px solid #ddd;
     border-radius: 4px;
     padding: 5px;
     margin: 10px;
     width: 300px;
-    max-width: fit-content;
+    max-width: 50%;
+    float: left;
 }
 
 .loc {
