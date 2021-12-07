@@ -2,6 +2,7 @@ import './style.css';
 import loadHome from './home.js';
 import loadMenu from './menu.js';
 import loadContact from './contact.js';
+import { loadSlider, addSliderEvents} from './slider';
 
 function createNav() {
     const nav = document.createElement('nav');
@@ -33,7 +34,7 @@ function loadPage() {
 
     const main = document.createElement('div');
     main.classList.add('main');
-    main.setAttribute('id', 'main')
+    main.setAttribute('id', 'main');
 
     content.appendChild(createNav());
     content.appendChild(main);
@@ -53,7 +54,10 @@ function addEvents() {
 function init() {
     loadPage();
     loadHome();
+    loadSlider();
+    addSliderEvents();
     addEvents();
 }
 
 init();
+

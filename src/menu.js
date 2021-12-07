@@ -16,24 +16,34 @@ function createMenu() {
 
     const pizza_img = new Image();
     pizza_img.src = pizza;
+    pizza_img.classList.add('menu-image');
     const patatas_img = new Image();
     patatas_img.src = patatas;
+    patatas_img.classList.add('menu-image');
     const sope_img = new Image();
     sope_img.src = sope;
+    sope_img.classList.add('menu-image');
     const flautas_img = new Image();
     flautas_img.src = flautas;
+    flautas_img.classList.add('menu-image');
     const ginataang_img = new Image();
     ginataang_img.src = ginataang;
+    ginataang_img.classList.add('menu-image');
     const laing_img = new Image();
     laing_img.src = laing;
+    laing_img.classList.add('menu-image');
     const sesame_img = new Image();
     sesame_img.src = sesame;
+    sesame_img.classList.add('menu-image');
     const dumplings_img = new Image();
     dumplings_img.src = dumplings;
+    dumplings_img.classList.add('menu-image');
     const mien_img = new Image();
     mien_img.src = mien;
+    mien_img.classList.add('menu-image');
     const goi_img = new Image();
     goi_img.src = goi;
+    goi_img.classList.add('menu-image');
 
     const pizza_desc = document.createElement('div');
     pizza_desc.classList.add('desc');
@@ -96,8 +106,6 @@ function createMenu() {
         <h3>Goi Nam</h3>
         <p>Oyster mushroom, carrot, peanut and basil salad topped with a light vegan fish sauce dressing.</p>
     `
-
-
     const item0 = document.createElement('div');
     item0.classList.add('menu-item');
     item0.appendChild(pizza_img);
