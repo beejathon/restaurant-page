@@ -1,7 +1,11 @@
 body {
     background-image: url('images/background.jpg');
     background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
+    height: 100%;
 }
 
 .container {
@@ -140,13 +144,14 @@ nav {
     position: absolute;
     top: 50%;
     z-index: 10;
-    right: 0%;
+    right: 1%;
 }
 
 .prev-wrapper {
     position: absolute;
     top: 50%;
     z-index: 10;
+    left: 1%;
 }
 
 .contact-form {
