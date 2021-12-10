@@ -105,8 +105,8 @@ nav {
 .arr {
     position: relative;
     background-color: rgba(0, 0, 0, 0.4);
-    height: 50px;
-    width: 50px;
+    height: 40px;
+    width: 40px;
     border-radius: 50%;
     margin: 10px;
     transition: 0.4 ease;
@@ -118,13 +118,13 @@ nav {
 
 .arr div {
     position: absolute;
-    height: 20px;
-    width: 20px;
+    height: 18px;
+    width: 18px;
     border-top: 4px solid whitesmoke;
     border-left: 4px solid whitesmoke;
     transform: rotate(45deg);
-    left: 14px;
-    top: 18px;
+    left: 9px;
+    top: 12px;
     opacity: 0.8;
 }
 
@@ -138,16 +138,15 @@ nav {
 
 .next-wrapper {
     position: absolute;
-    bottom: 50%;
+    top: 50%;
     z-index: 10;
-    right: 2%;
+    right: 0%;
 }
 
 .prev-wrapper {
     position: absolute;
-    bottom: 50%;
+    top: 50%;
     z-index: 10;
-    left: 2%;
 }
 
 .contact-form {
