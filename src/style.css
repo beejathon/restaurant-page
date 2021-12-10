@@ -82,7 +82,7 @@ nav {
 }
 
 .slider {
-    width: 25vw;
+    width: 50vw;
     margin: auto;
     overflow: hidden;
     position: relative;
@@ -97,9 +97,9 @@ nav {
 }
 
 .slideImg {
-    width: 25vw;
-    height: fit-content;
-    align-self:center;
+    width: 50vw;
+    height: max-content;
+    align-self: flex-start;
 }
 
 .arr {

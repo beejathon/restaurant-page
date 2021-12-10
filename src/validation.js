@@ -46,10 +46,27 @@ function loadFormValidation() {
   });
 
   form.addEventListener('submit', function(e) {
-    if (!email.validity.valid) {
-        showError();
+    e.stopPropagation();
+    e.preventDefault();
+    if (!name.validity.valid) {
+        showNameError();
         e.stopPropagation();
         e.preventDefault();
+    } else if (!email.validity.valid) {
+        showEmailError();
+        e.stopPropagation();
+        e.preventDefault();
+    } else if (!phone.validity.valid) {
+        showPhoneError();
+        e.stopPropagation();
+        e.preventDefault();
+    } else if (!message.validity.valid) {
+        showMessageError();
+        e.stopPropagation();
+        e.preventDefault();
+    } else {
+        alert(`Thanks for your message!`);
+        form.reset();
     }
   });
 }
@@ -59,13 +76,13 @@ function showNameError() {
   const nameError = document.getElementById('nameError');
 
   if (name.validity.valueMissing) {
-    nameError.textContent = 'Enter a name ya dingus';
+      nameError.textContent = 'Enter a name ya dingus';
   }
   if (name.validity.typeMismatch) {
-    nameError.textContent = 'Incorret name ya dingus';
+      nameError.textContent = 'Incorret name ya dingus';
   }
   if (name.validity.rangeOverflow) {
-    nameError.textContent = 'Too long ya dingus';
+      nameError.textContent = 'Too long ya dingus';
   }
 }
 
@@ -74,13 +91,13 @@ function showEmailError() {
   const emailError = document.getElementById('emailError');
 
   if (email.validity.valueMissing) {
-    emailError.textContent = 'Enter an email ya dingus';
+      emailError.textContent = 'Enter an email ya dingus';
   }
   if (email.validity.typeMismatch) {
-    emailError.textContent = 'Incorrect format ya dingus';
+      emailError.textContent = 'Incorrect format ya dingus';
   }
   if (email.validity.rangeOverflow) {
-    emailError.textContent = 'Too long ya dingus'
+      emailError.textContent = 'Too long ya dingus'
   }
 }
 
@@ -89,16 +106,16 @@ function showPhoneError() {
   const phoneError = document.getElementById('phoneError');
 
   if (phone.validity.valueMissing) {
-    phoneError.textContent = 'Enter a phone ya dingus';
+      phoneError.textContent = 'Enter a phone ya dingus';
   }
-  if (phone.validity.typeMismatch) {
-    phoneError.textContent = 'Incorrect format ya dingus';
+  if (phone.validity.patternMismatch) {
+      phoneError.textContent = 'Incorrect format ya dingus';
   }
   if (phone.validity.tooShort) {
-    phoneError.textContent = 'Too $hort beeyotch';
+      phoneError.textContent = 'Too $hort beeyotch';
   }
   if (phone.validity.rangeOverflow) {
-    phoneError.textContent = 'Too long ya dingus';
+      phoneError.textContent = 'Too long ya dingus';
   }
 }
 
@@ -107,13 +124,13 @@ function showMessageError() {
   const messageError = document.getElementById('messageError');
 
   if (message.validity.valueMissing) {
-    messageError.textContent = 'Enter a message ya dingus';
+      messageError.textContent = 'Enter a message ya dingus';
   }
   if (message.validity.typeMismatch) {
-    messageError.textContent = 'Incorrect format ya dingus';
+      messageError.textContent = 'Incorrect format ya dingus';
   }
   if (message.validity.rangeOverflow) {
-    messageError.textContent = 'Too long ya dingus';
+      messageError.textContent = 'Too long ya dingus';
   }
 }
 

@@ -35,9 +35,9 @@ function createContactForm() {
     phone.setAttribute('type', 'tel');
     phone.setAttribute('id', 'phone');
     phone.setAttribute('required', 'true');
-    phone.setAttribute('maxlength', '15');
-    phone.setAttribute('minlength', '8');
-    phone.setAttribute('placeholder', 'Phone #');
+    phone.setAttribute('minlength', '10');
+    phone.setAttribute('pattern', "[0-9]{10}");
+    phone.setAttribute('placeholder', 'Enter a 10-digit US phone #');
     phoneError.classList.add('error');
     phoneError.setAttribute('id', 'phoneError');
     message.classList.add('user-message');

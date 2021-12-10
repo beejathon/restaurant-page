@@ -95,7 +95,7 @@ function addSliderEvents() {
   const frame = document.querySelector('#frame');
   const images = document.querySelectorAll('.frame img');
   
-  frame.style.transform = `translateX(${counter * -25}vw)`;
+  frame.style.transform = `translateX(${counter * -50}vw)`;
   
   const prevBtn = document.querySelector('#prevBtn');
   const nextBtn = document.querySelector('#nextBtn');
@@ -104,7 +104,7 @@ function addSliderEvents() {
       if (counter <= 0) return;
       frame.style.transition = "transform 0.4s ease-in-out";
       counter--;
-      frame.style.transform = `translateX(${counter * -25}vw)`;
+      frame.style.transform = `translateX(${counter * -50}vw)`;
       console.log(counter)
   });
   
@@ -112,7 +112,7 @@ function addSliderEvents() {
       if (counter >= images.length - 1) return;
       frame.style.transition = "transform 0.4s ease-in-out";
       counter++;
-      frame.style.transform = `translateX(${counter * -25}vw)`;
+      frame.style.transform = `translateX(${counter * -50}vw)`;
       console.log(counter)
   });
   
@@ -120,12 +120,12 @@ function addSliderEvents() {
       if (images[counter].id ==='lastClone') {
           frame.style.transition = 'none';
           counter = images.length -2;
-          frame.style.transform = `translateX(${counter * -25}vw)`;
+          frame.style.transform = `translateX(${counter * -50}vw)`;
       }
       if (images[counter].id ==='firstClone') {
           frame.style.transition = 'none';
           counter = 1;
-          frame.style.transform = `translateX(${counter * -25}vw)`;
+          frame.style.transform = `translateX(${counter * -50}vw)`;
       }
   });
 }
