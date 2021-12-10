@@ -163,8 +163,11 @@ function createMenu() {
 
 function loadMenu() {
     const main = document.getElementById('main');
-    main.textContent = ''
+    main.textContent = '';
     main.appendChild(createMenu());
+
+    const footer = document.getElementById('footer');
+    footer.textContent = '';
 }
 
 export default loadMenu;

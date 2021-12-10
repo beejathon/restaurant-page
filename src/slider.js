@@ -9,6 +9,40 @@ import img08 from './images/08.JPG';
 
 let counter = 1;
 
+function createSlider() {
+    const footer = document.getElementById('footer');
+    const slider = document.createElement('div');
+    const prevWrapper = document.createElement('div');
+    const nextWrapper = document.createElement('div');
+    const prevBtn = document.createElement('div');
+    const nextBtn = document.createElement('div');
+    const prevArr = document.createElement('div');
+    const nextArr = document.createElement('div');
+    const frame = document.createElement('div');
+
+    slider.classList.add('slider');
+    slider.setAttribute('id', 'slider');
+    prevWrapper.classList.add('prev-wrapper');
+    nextWrapper.classList.add('next-wrapper');
+    prevBtn.classList.add('arr');
+    prevBtn.classList.add('prev');
+    prevBtn.setAttribute('id', 'prevBtn');
+    nextBtn.classList.add('arr');
+    nextBtn.classList.add('next');
+    nextBtn.setAttribute('id', 'nextBtn')
+    frame.classList.add('frame');
+    frame.setAttribute('id', 'frame');
+
+    prevBtn.appendChild(prevArr);
+    nextBtn.appendChild(nextArr);
+    prevWrapper.appendChild(prevBtn);
+    nextWrapper.appendChild(nextBtn);
+    slider.appendChild(prevWrapper);
+    slider.appendChild(nextWrapper);
+    slider.appendChild(frame);
+    footer.appendChild(slider)
+}
+
 function loadSlider() {
   const frame = document.getElementById('frame');
   
@@ -96,4 +130,4 @@ function addSliderEvents() {
   });
 }
 
-export { loadSlider, addSliderEvents };
+export { createSlider, loadSlider, addSliderEvents };

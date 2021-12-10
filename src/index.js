@@ -2,7 +2,7 @@ import './style.css';
 import loadHome from './home.js';
 import loadMenu from './menu.js';
 import loadContact from './contact.js';
-import { loadSlider, addSliderEvents} from './slider';
+
 
 function createNav() {
     const nav = document.createElement('nav');
@@ -54,8 +54,6 @@ function addEvents() {
 function init() {
     loadPage();
     loadHome();
-    loadSlider();
-    addSliderEvents();
     addEvents();
 }
 

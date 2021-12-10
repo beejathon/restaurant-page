@@ -1,3 +1,5 @@
+import { createSlider, loadSlider, addSliderEvents} from './slider';
+
 function loadHome() {
     const main = document.getElementById('main');
     main.innerHTML = `
@@ -38,6 +40,10 @@ function loadHome() {
     It's our favorite food from all of the places we've lived and we've spent over a decade perfecting these dishes.
     It's good, actually. Ask anyone!
     `;
+
+    createSlider();
+    loadSlider();
+    addSliderEvents();
 }
 
 export default loadHome;
