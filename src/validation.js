@@ -106,13 +106,13 @@ function showPhoneError() {
   const phoneError = document.getElementById('phoneError');
 
   if (phone.validity.valueMissing) {
-      phoneError.textContent = 'Enter a phone ya dingus';
+      phoneError.textContent = 'Enter a phone # ya dingus';
   }
   if (phone.validity.patternMismatch) {
       phoneError.textContent = 'Incorrect format ya dingus';
   }
   if (phone.validity.tooShort) {
-      phoneError.textContent = 'Too $hort beeyotch';
+      phoneError.textContent = 'Too $hort';
   }
   if (phone.validity.rangeOverflow) {
       phoneError.textContent = 'Too long ya dingus';

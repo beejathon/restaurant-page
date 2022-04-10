@@ -1,3 +1,8 @@
+:root {
+    font-family:'Courier New', Courier, monospace;
+    color: #eee;
+}
+
 body {
     background-image: url('images/background.jpg');
     background-attachment: fixed;
@@ -34,9 +39,8 @@ nav {
     border-style: none;
     outline: none;
     background-color: rgba(0, 0, 0, 0);
-    color: #eee;
     padding: 10px;
-    font-family:'Courier New', Courier, monospace;
+    color: #eee;
     font-size: 20px;
 }
 
@@ -45,8 +49,6 @@ nav {
     border: 2px solid black;
     padding: 20px;
     background-color: rgba(0, 0, 0, 0.8);
-    font-family:'Courier New', Courier, monospace;
-    color: #eee;
     display: flex;
     flex-direction: column;
 }
@@ -86,7 +88,7 @@ nav {
 }
 
 .slider {
-    width: 40vw;
+    width: 30vw;
     margin: auto;
     overflow: hidden;
     position: relative;
@@ -101,14 +103,14 @@ nav {
 }
 
 .slideImg {
-    width: 40vw;
+    width: 30vw;
     justify-self: center;
     align-self: center;
 }
 
 .arr {
     position: relative;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.1);
     height: 40px;
     width: 40px;
     border-radius: 50%;
@@ -117,19 +119,18 @@ nav {
 }
 
 .arr:hover {
-    box-shadow: 0px 0px 20px 20px rgba(0, 0, 0, 0.5)
+    box-shadow: 0px 0px 20px 20px rgba(0, 0, 0, 0.2)
 }
 
 .arr div {
     position: absolute;
-    height: 18px;
-    width: 18px;
-    border-top: 4px solid whitesmoke;
-    border-left: 4px solid whitesmoke;
+    height: 15px;
+    width: 15px;
+    border-top: 5px groove whitesmoke;
+    border-left: 5px groove whitesmoke;
     transform: rotate(45deg);
-    left: 9px;
-    top: 12px;
-    opacity: 0.8;
+    left: 12px;
+    top: 14px;
 }
 
 .next {
@@ -154,19 +155,26 @@ nav {
     left: 1%;
 }
 
+.form-wrapper {
+    display: flex;
+    width: 50vw;
+}
+
 .contact-form {
     display: flex;
     flex-direction: column;
-    width: 50vw;
-    row-gap: 15px;
+    row-gap: 10px;
     padding-top: 50px;
 }
 
 .user-info {
+    padding: 10px;
     width: 80vw;
+    height: 25px;
 }
 
 .user-message {
+    padding: 10px;
     width: 80vw;
     height: 250px;
 }
@@ -217,12 +225,13 @@ textarea:focus:invalid {
 }
 
 .error {
-    width  : 100%;
+    text-align: center;
+    width: 400px;
     padding: 0;
-    font-size: 80%;
+    font-size: 90%;
     color: white;
-    background-color: #900;
-    border-radius: 0 0 5px 5px;
+    background-color: rgba(2, 206, 196, 0.783);
+    border-radius: 5px;
     box-sizing: border-box;
 }
   

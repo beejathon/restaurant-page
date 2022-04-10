@@ -2,6 +2,7 @@ import location from './images/location.png';
 import loadFormValidation from './validation.js';
 
 function createContactForm() {
+    const wrapper = document.createElement('div')
     const form = document.createElement('form');
     const name = document.createElement('input');
     const nameError = document.createElement('span');
@@ -13,6 +14,7 @@ function createContactForm() {
     const messageError = document.createElement('span');
     const button = document.createElement('button');
 
+    wrapper.classList.add('form-wrapper')
     form.classList.add('contact-form');
     form.setAttribute('novalidate', 'true');
     name.classList.add('user-info');
@@ -59,8 +61,9 @@ function createContactForm() {
     form.appendChild(message);
     form.appendChild(messageError);
     form.appendChild(button);
+    wrapper.appendChild(form)
 
-    return form;
+    return wrapper;
 }
 
 function loadContact() {

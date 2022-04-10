@@ -1,7 +1,7 @@
-import img01 from './images/01.JPG';
-import img02 from './images/02.JPG';
-import img03 from './images/03.JPG';
-import img04 from './images/04.JPG';
+import img01 from './images/01.png';
+import img02 from './images/02.png';
+import img03 from './images/03.png';
+import img04 from './images/04.png';
 import img05 from './images/05.JPG';
 import img06 from './images/06.JPG';
 import img07 from './images/07.JPG';
@@ -95,7 +95,7 @@ function addSliderEvents() {
   const frame = document.querySelector('#frame');
   const images = document.querySelectorAll('.frame img');
   
-  frame.style.transform = `translateX(${counter * -40}vw)`;
+  frame.style.transform = `translateX(${counter * -30}vw)`;
   
   const prevBtn = document.querySelector('#prevBtn');
   const nextBtn = document.querySelector('#nextBtn');
@@ -104,14 +104,14 @@ function addSliderEvents() {
       if (counter <= 0) return;
       frame.style.transition = "transform 0.4s ease-in-out";
       counter--;
-      frame.style.transform = `translateX(${counter * -40}vw)`;
+      frame.style.transform = `translateX(${counter * -30}vw)`;
   });
   
   nextBtn.addEventListener('click', () => {
       if (counter >= images.length - 1) return;
       frame.style.transition = "transform 0.4s ease-in-out";
       counter++;
-      frame.style.transform = `translateX(${counter * -40}vw)`;
+      frame.style.transform = `translateX(${counter * -30}vw)`;
       console.log(counter)
   });
   
@@ -119,12 +119,12 @@ function addSliderEvents() {
       if (images[counter].id ==='lastClone') {
           frame.style.transition = 'none';
           counter = images.length -2;
-          frame.style.transform = `translateX(${counter * -40}vw)`;
+          frame.style.transform = `translateX(${counter * -30}vw)`;
       }
       if (images[counter].id ==='firstClone') {
           frame.style.transition = 'none';
           counter = 1;
-          frame.style.transform = `translateX(${counter * -40}vw)`;
+          frame.style.transform = `translateX(${counter * -30}vw)`;
       }
   });
 }
