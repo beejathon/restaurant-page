@@ -2,10 +2,15 @@ import './style.css';
 import loadHome from './home.js';
 import loadMenu from './menu.js';
 import loadContact from './contact.js';
+import bridge from './images/bridge.png';
 
 
 function createNav() {
     const nav = document.createElement('nav');
+
+    const logo = new Image();
+    logo.src = bridge;
+    logo.classList.add('logo')
 
     const homeBtn = document.createElement('button');
     homeBtn.classList.add('btn');
@@ -22,6 +27,7 @@ function createNav() {
     contactBtn.setAttribute('id', 'contact');
     contactBtn.textContent = 'Contact';
 
+    nav.appendChild(logo);
     nav.appendChild(homeBtn);
     nav.appendChild(menuBtn);
     nav.appendChild(contactBtn);

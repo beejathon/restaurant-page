@@ -1,6 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Montserrat:wght@200&display=swap');
+
 :root {
-    font-family:'Courier New', Courier, monospace;
+    font-family: 'Montserrat', sans-serif;
     color: #eee;
+    box-sizing: border-box;
+    font-size: 18px;
 }
 
 body {
@@ -11,6 +15,8 @@ body {
     -o-background-size: cover;
     background-size: cover;
     height: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 .container {
@@ -25,13 +31,17 @@ body {
 nav {
     display: flex;
     flex: row;
-    justify-content: center;
-    column-gap: 5rem;
+    justify-content: space-around;
     border: 2px solid black;
     width: 100vw;
     padding: 20px;
-    margin: 10px;
+    margin-bottom: 10px;
     background-color: rgba(0, 0, 0, 0.9);
+    flex: 1;
+}
+
+.logo {
+    width: 6em;
 }
 
 .btn {
@@ -41,7 +51,8 @@ nav {
     background-color: rgba(0, 0, 0, 0);
     padding: 10px;
     color: #eee;
-    font-size: 20px;
+    font-size: 24px;
+    flex: 1;
 }
 
 .main {
@@ -110,7 +121,7 @@ nav {
 
 .arr {
     position: relative;
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 0, 0, 0.5);
     height: 40px;
     width: 40px;
     border-radius: 50%;
@@ -126,11 +137,11 @@ nav {
     position: absolute;
     height: 15px;
     width: 15px;
-    border-top: 5px groove whitesmoke;
-    border-left: 5px groove whitesmoke;
+    border-top: 4px groove whitesmoke;
+    border-left: 4px groove whitesmoke;
     transform: rotate(45deg);
-    left: 12px;
-    top: 14px;
+    left: 10px;
+    top: 12px;
 }
 
 .next {

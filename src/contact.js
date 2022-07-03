@@ -74,14 +74,14 @@ function loadContact() {
     content.textContent = '';
 
     const description = document.createElement('p');
-    description.textContent = 'We are located in Long Bien District, just near the Long Bien Bridge and overlooking the Red River. Slide thru muffucker.'
+    description.textContent = 'We are located in Long Bien District, just near the Long Bien Bridge and overlooking the Red River.'
 
     const loc = new Image();
     loc.src = location;
     loc.classList.add('loc');
 
     const contact = document.createElement('p');
-    contact.textContent = 'Call us @ +84 01697341170 or send a message using the form below :)'
+    contact.textContent = 'Call us @ +84 01697341170 or send a message using the form below'
 
     content.appendChild(description);
     content.appendChild(loc);
